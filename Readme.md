@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomInteractivity.js](./CS/ASPxDashboard_CustomVisualInteractivity/Scripts/CustomInteractivity.js) (VB: [CustomInteractivity.js](./VB/ASPxDashboard_CustomVisualInteractivity/Scripts/CustomInteractivity.js))
+* [WebForm1.aspx](./CS/ASPxDashboard_CustomVisualInteractivity/WebForm1.aspx) (VB: [WebForm1.aspx.vb](./VB/ASPxDashboard_CustomVisualInteractivity/WebForm1.aspx.vb))
+* [WebForm1.aspx.cs](./CS/ASPxDashboard_CustomVisualInteractivity/WebForm1.aspx.cs) (VB: [WebForm1.aspx.vb](./VB/ASPxDashboard_CustomVisualInteractivity/WebForm1.aspx.vb))
+<!-- default file list end -->
 # ASPxDashboard - How to add custom interactivity to a dashboard
 
 
