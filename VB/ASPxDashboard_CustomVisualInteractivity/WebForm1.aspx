@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="WebForm1.aspx.vb" 
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="WebForm1.aspx.vb" 
     Inherits="ASPxDashboard_CustomVisualInteractivity.WebForm1" %>
 
 <%@ Register Assembly="DevExpress.Dashboard.v17.1.Web, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
@@ -26,4 +26,6 @@
     </form>
 </body>
 </html>
-<script type="text/javascript" src="<%=Page.ResolveClientUrl("~/Scripts/CustomInteractivity.js")%>"></script>
+<script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Scripts/CustomInteractivity.js") %>"></script>
+
+
