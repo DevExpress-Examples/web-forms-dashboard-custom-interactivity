@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
     <div style="display: inline-block; float: left;">
         <dx:ASPxDashboard ID="ASPxDashboard1" runat="server" Height="600px" Width="800px"
-            WorkingMode="viewer"          
+            WorkingMode="Viewer"          
             ClientInstanceName="dashboardControl" >
             <ClientSideEvents BeforeRender="onBeforeRender" />
         </dx:ASPxDashboard>
