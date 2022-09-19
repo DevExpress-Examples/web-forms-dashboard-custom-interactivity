@@ -27,7 +27,12 @@ function createControls() {
         startValue: 0,
         endValue: 10000,
         values: getAllValues(),
-        format: { style: "currency", currency: "USD" },
+        title: {
+            text: "Product Quantity",
+            font: {
+                size: 28,
+            }
+        },
         label: {
             format: 'fixedPoint',
             precision: 0
@@ -52,7 +57,7 @@ function createControls() {
 }
 
 function getText(item, text) {
-    return `${item} - $${text}`
+    return `${item} - ${text}`
 }
 
 function applyCurrentSelection(args) {
