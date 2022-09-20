@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" 
     Inherits="ASPxDashboard_CustomVisualInteractivity.WebForm1" %>
 
-<%@ Register Assembly="DevExpress.Dashboard.v21.2.Web.WebForms, Version=21.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
+<%@ Register Assembly="DevExpress.Dashboard.v21.2.Web.WebForms, Version=21.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
     Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
     <div style="display: inline-block; float: left;">
         <dx:ASPxDashboard ID="ASPxDashboard1" runat="server" Height="600px" Width="800px"
-            WorkingMode="viewer"          
+            WorkingMode="Viewer"          
             ClientInstanceName="dashboardControl" >
             <ClientSideEvents BeforeRender="onBeforeRender" />
         </dx:ASPxDashboard>
