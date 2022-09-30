@@ -1,14 +1,15 @@
 var dimensionValues = [];
 
 function onBeforeRender(sender) {
-    window['control'] = sender.GetDashboardControl();    
-    var viewerApiExtension = control.findExtension("viewerApi");
-    if (viewerApiExtension)
-        viewerApiExtension.on('itemVisualInteractivity', addCustomInteractivity);
-    if (viewerApiExtension)
-        viewerApiExtension.on('itemSelectionChanged', applyCurrentSelection);
-    if (control)
+    window['control'] = sender.GetDashboardControl();
+    if (control) {
         control.on('dashboardEndUpdate', createControls);
+        var viewerApiExtension = control.findExtension("viewerApi");
+    }
+    if (viewerApiExtension) {
+        viewerApiExtension.on('itemVisualInteractivity', addCustomInteractivity);
+        viewerApiExtension.on('itemSelectionChanged', applyCurrentSelection);
+    }
 }
 
 function addCustomInteractivity(args) {
@@ -77,7 +78,7 @@ function applyCurrentSelection(args) {
     } else {
         quantityValues = getAllValues();
     }
-    $('#barGauge').data("dxBarGauge").values(quantityValues);
+    $("#barGauge").dxBarGauge("instance").values(quantityValues);
 }
 
 function getAllValues() {
